@@ -103,7 +103,6 @@ def load_data(city, month, day):
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday
-    #print(df)
 
     # filter by month if applicable
     if month.title() != 'All':
@@ -111,11 +110,9 @@ def load_data(city, month, day):
         months = {}
         months = {month: index for index, month in enumerate(calendar.month_abbr) if month}
         month = months[month.title()]
-        #print('the chosen month is {}'.format(month))
 
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
-        #print(df['month'])
 
     # filter by day of week if applicable
     if day.title() != 'All':
@@ -124,7 +121,6 @@ def load_data(city, month, day):
         day = days[day.title()]
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day]
-        #print(df['day_of_week'])
 
     return df
 
@@ -194,7 +190,7 @@ def station_stats(df):
     # Display most commonly used start station
     start_station_counts = df['Start Station'].value_counts().head(1)
     print("Most Commonly Used Start Station & Counts")
-    print("-----------------------------------------")
+    print('-'*40)
     print(start_station_counts.to_string())
     print()
 
@@ -202,7 +198,7 @@ def station_stats(df):
     # Display most commonly used end station
     end_station_counts = df['End Station'].value_counts().head(1)
     print("Most Commonly Used End Wtation & Counts")
-    print("---------------------------------------")
+    print('-'*40)
     print(end_station_counts.to_string())
     print()
 
@@ -210,7 +206,7 @@ def station_stats(df):
     # Display most frequent combination of start station and end station trip
     frequent_combination_station_counts = df[['Start Station','End Station']].value_counts().head(1)
     print("Most Commonly Used Start & End Stations  &  Counts")
-    print("--------------------------------------------------")
+    print('-'*40)
     print(frequent_combination_station_counts.to_string())
     print()
 
@@ -257,7 +253,7 @@ def user_stats(df):
     # Display counts of user types
         user_types = df['User Type'].value_counts()
         print("Each user type & Counts")
-        print("-----------------------")
+        print('-'*23)
         print(user_types.to_string())
     except(ValueError, KeyError):
         print("There is no User Type data")
@@ -268,7 +264,7 @@ def user_stats(df):
         # Display counts of gender
         user_types = df['Gender'].value_counts()
         print("Each gender & Counts")
-        print("--------------------")
+        print('-'*20)
         print(user_types.to_string())
     except(ValueError, KeyError):
         print("There is no Gender data")
