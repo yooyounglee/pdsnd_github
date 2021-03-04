@@ -55,7 +55,7 @@ def get_filters():
                 
     if (is_city_available) :
         
-        # Get user input for month (all, january, february, ... , june)
+        # Get user input for month ('All', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun')
         available_month = ['All', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
         
         while (month.title() not in available_month):
