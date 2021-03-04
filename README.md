@@ -11,12 +11,14 @@ In this project, I used Python Numpy and Panda modules to explore data related t
 
 ### Files used
 bikeshare_2.py
+
+**data file**
 chicago.csv
 new_york_city.csv
 washington.csv
 
 ### Credits
-I used the following references for the data analysis work.
+I used the following references for the python code.
 https://docs.python.org/3/library/calendar.html
 https://docs.python.org/3/library/datetime.html
 https://docs.python.org/3/library/datetime.html#timedelta-objects
