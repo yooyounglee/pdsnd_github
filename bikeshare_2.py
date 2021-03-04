@@ -110,11 +110,9 @@ def load_data(city, month, day):
         months = {}
         months = {month: index for index, month in enumerate(calendar.month_abbr) if month}
         month = months[month.title()]
-        #print('the chosen month is {}'.format(month))
 
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
-        #print(df['month'])
 
     # filter by day of week if applicable
     if day.title() != 'All':
