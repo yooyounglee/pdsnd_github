@@ -13,17 +13,17 @@ In this project, I used Python Numpy and Panda modules to explore data related t
 bikeshare_2.py
 
 **data file**
-chicago.csv
-new_york_city.csv
-washington.csv
+* chicago.csv
+* new_york_city.csv
+* washington.csv
 
 ### Credits
 I used the following references for the python code.
-https://docs.python.org/3/library/calendar.html
-https://docs.python.org/3/library/datetime.html
-https://docs.python.org/3/library/datetime.html#timedelta-objects
-https://stackoverflow.com/questions/3418050/month-name-to-month-number-and-vice-versa-in-python
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mode.html
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sum.html
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mean.html
+* https://docs.python.org/3/library/calendar.html
+* https://docs.python.org/3/library/datetime.html
+* https://docs.python.org/3/library/datetime.html#timedelta-objects
+* https://stackoverflow.com/questions/3418050/month-name-to-month-number-and-vice-versa-in-python
+* https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mode.html
+* https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sum.html
+* https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mean.html
 
